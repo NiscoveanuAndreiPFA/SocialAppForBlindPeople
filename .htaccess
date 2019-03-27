@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Options +FollowSymlinks
+
+
+
+#RewriteRule ^index(|/)$ /c4d/index.php [L]
+RewriteRule ^login(|/)$ /c4d/login.php [L]
+RewriteRule ^menu(|/)$ /c4d/menu.php [L]
+RewriteRule ^addevent(|/)$ /c4d/addEvent.php [L]
+RewriteRule ^forum(|/)$ /c4d/forum.php [L]
+RewriteRule ^add_forum_topic(|/)$ /c4d/add_forum_topic.php [L]
+RewriteRule ^signup(|/)$ /c4d/signup.php [L]
+RewriteRule ^notifications(|/)$ /c4d/notifications.php [L]
+RewriteRule ^settings(|/)$ /c4d/settings.php [L]
+RewriteRule ^top_users(|/)$ /c4d/topusers.php [L]
+
+
+
+#RewriteRule ^index/(.*)$ /c4d/index.php?a=$1 [L]
+RewriteRule ^profile/(.*)$ /c4d/profile.php?u=$1 [L]
+RewriteRule ^admin/(.*)$ /c4d/admin.php?u=$1 [L]
+RewriteRule ^events/(.*)$ /c4d/events.php?t=$1 [L]
+RewriteRule ^event/(.*)$ /c4d/event.php?e=$1 [L]
+RewriteRule ^view_forum/(.*)$ /c4d/view_forum.php?i=$1 [L]
+RewriteRule ^accept/(.*)$ /c4d/accept.php?info=$1 [L]
+RewriteRule ^rateuser/(.*)$ /c4d/rateuser.php?u=$1 [L]
+
+</IfModule>

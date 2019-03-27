@@ -1,0 +1,1 @@
+<?php header("location: /c4d/login"); ?>
